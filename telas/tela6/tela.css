@@ -1,0 +1,184 @@
+
+body{padding: 0px; margin: 0px;}
+
+a{outline:none;}
+
+#fundo{display: none; position:absolute;}
+
+#area {
+display: block;
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+
+#aparece0{
+top:0px;
+left:0px;	
+}
+
+#aparece1{
+top:0px;
+left:0px;
+}
+
+#aparece2{
+top:0px;
+left:0px;	
+}
+
+#aparece3{
+left: 140px;
+    top: 168px;	
+}
+
+#aparece4{
+left: 140px;
+    top: 265px;
+}
+
+#aparece5{
+left: 140px;
+    top: 362px;	
+}
+
+#aparece6{
+left: 140px;
+    top: 463px;	
+}
+
+.caixas{
+position: absolute;
+top:0px;
+left:0px;
+z-index:0;
+}
+
+.item_clique{
+cursor: pointer;
+height: 30px;
+position: absolute;
+width: 91px;
+z-index: 2;
+}
+
+#item1{
+left: 181px;
+top: 545px;
+}
+
+#item2{
+left: 272px;
+top: 512px;
+}
+
+#item3{
+left: 362px;
+top: 480px;	
+}
+
+#item4{
+left: 30px;
+top: 460px;
+}
+
+#item5{
+left: 715px;
+    top: 160px;
+}
+
+#item6{
+left: 715px;
+top: 260px;
+}
+
+#item7{
+left: 715px;
+top: 360px;
+}
+
+#item8{
+left: 715px;
+top: 460px;
+}
+
+
+
+
+.item_check{
+background-image:url(img/checked.png);
+height: 40px;
+position: absolute;
+width: 40px;
+background-size:100%;
+background-repeat:no-repeat;
+display:none;
+z-index:1;
+}
+
+#check1{
+	display:none;
+	left: 257px;
+    top: 518px;
+}
+
+#check2{
+	display:none;
+	left: 347px;
+    top: 490px;
+}
+
+#check3{
+	display:none;
+	left: 433px;
+    top: 460px;	
+}
+
+#check4{
+left: 23px;
+top: 450px;
+}
+
+#check5{
+left: 708px;
+top: 150px;
+}
+
+#check6{
+left: 708px;
+top: 250px;
+}
+
+#check7{
+left: 708px;
+top: 350px;
+}
+
+#check8{
+left: 708px;
+top: 450px;
+}
+
+#seta_v{
+top:220px;
+left:15px;
+z-index:100;
+cursor:pointer;	
+}
+
+#seta_a{
+cursor: pointer;
+left: 630px;
+top: 220px;
+z-index: 100;
+}
+
+#elementos_tela{
+    height: 455px;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    width: 970px;
+    z-index: 99;
+}

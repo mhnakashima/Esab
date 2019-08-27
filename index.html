@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang=”pt-br”>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+    <title>ESAB</title>    
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <script type="text/javascript" src="js/APIWrapper.js"></script>
+    <script type="text/javascript" src="js/SCOFunctions.js"></script>
+    <script type="text/javascript" src="js/ChromeUnloadForcer.js"></script>
+    
+    <!--CHAMADA DE SCRIPTS-->
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/audio.js"></script>
+	<script type="text/javascript" src="js/padrao.js"></script>
+    <!--
+	<script type="text/javascript" src="js/funcoes.js"></script>
+    <script type="text/javascript" src="js/funcoes_video.js"></script>
+    -->
+</head>
+    
+
+<!--<body onload="loadPage();" onunload="unloadPage();">-->
+<body>
+<div id="alinhamento-central">    
+    <div id="pagina">
+    	<!-------------------------------------------------------------------------------------->        
+        <!--INPUT DE TROCA DE TELAS E IFRAME QUE RECEBE AS TELAS-->
+        <!--<input type="text" onKeyPress="apertaEnter(event)" id="apertaTecla" autocomplete="off" />-->
+        <iframe name="conteudocurso" id="conteudo-curso" width="100%" height="630" frameborder="0" scrolling="no" src="telas/tela0/tela.html" allowFullScreen></iframe >
+        
+        <!-------------------------------------------------------------------------------------->        
+        <!--DIV INVISIVEL QUE CARREGA O AUDIO A SER TOCADO VIA JAVASCRIPT-->
+        <div id="toca_audio"></div>
+        <!-------------------------------------------------------------------------------------->
+        
+        
+        <!--RODAPE ----------------------------------------------------------------------------->
+        <div id="rodape_div">
+        	<div id="barra_rodape"></div>
+        </div>
+        
+        <div id="cabecalho">
+
+            <div class="nameOfScreen">
+                - Oi Prepara - 
+            </div>
+
+            <img class="logo" src="./layout_base/_itensTelas/logo.png" alt="">
+            
+            <div id="contagem_telas">
+                <div class="topo">Tela</div>
+                <div class="items">
+                    <span id="num_paginas"></span> /
+                    <span id="total_paginas"></span>
+                </div>
+            </div>      
+        </div>
+
+        <div id="botoesRodape">
+            
+            <div id="botao-ajuda">
+                <img src="layout_base/_itensTelas/botaoAjuda.png" >
+            </div>
+            <div id="botao-items" >
+                <img src="layout_base/_itensTelas/botaoLeitura.png" >
+            </div>
+            
+            <div id="botaoMenu"></div>
+        	<div id="botao-rever" onclick="navegacaoTelas_fc('REVER')"><img src="layout_base/_itensTelas/botaoReverTela.png" border="0"></div>
+            <div id="botao-voltar" onclick="navegacaoTelas_fc('VOLTAR')"><img src="layout_base/_itensTelas/botaoVoltarTela.png" border="0"></div>
+            <div id="botao-avancar" onclick=""
+                    ds
+            ><img src="layout_base/_itensTelas/botaoAvancarTela.png" border="0"></div>
+            <div class="clear"></div>        
+        </div>
+
+       
+        <!-------------------------------------------------------------------------------------->
+        
+        
+        
+        <!-------------------------------------------------------------------------------------->
+        <!--CONTROLE DAS TELAS QUE TEM POPUP-->
+        <!--<div id="botaoFecharPopup"><a href="javascript:botaoFechar_fc()"><img src="img/_itensTelas/botao_fechar.png" border="0"></a></div>-->
+        <!--<div id="popup"></div>-->
+		<!--<img src="img/_itensTelas/marca.png" id="marca" />-->
+        <!-------------------------------------------------------------------------------------->      
+       
+	   
+           
+        <div class="alpha"></div>
+        <div class="ajuda">
+            <span class="fechar">
+                <img src="./layout_base/_itensTelas/fechar.png" alt="gráfico">
+            </span>
+            <img class="ajudaImg" src="./layout_base/_itensTelas/ajuda.png" alt="">
+        </div>
+
+        <div class="menu">
+            <span class="fechar">
+                <img src="./layout_base/_itensTelas/fechar.png" alt="gráfico">
+            </span>
+            <div id="menu-lista" >
+                <ul class="menu-items" id="menu-items">
+                    <li class="menu-item" id="link_menu">
+                        
+                    </li>
+                    <!--<li onclick="" id="link_menu2" class="links_menu">Procedimentos</li>
+                    <li onclick="" id="link_menu3" class="links_menu">Exigências</li>
+                    <li onclick="" id="link_menu4" class="links_menu">Responsabilidades e funções</li>
+                    <li onclick="" id="link_menu5" class="links_menu">Encerramento</li>-->               
+                </ul>
+            </div>         
+        </div>
+
+        <div class="glossary">
+
+            <span class="fechar">
+                <img src="./layout_base/_itensTelas/fechar.png" alt="gráfico">
+            </span>
+
+            <div class="glossary-items">
+                <div class="glossary-letters"></div>
+                <div class="glossary-meaning"></div>
+            </div>
+        </div>
+</div>
+</body>
+</html>

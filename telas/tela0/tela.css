@@ -1,0 +1,100 @@
+
+body{padding: 0px; margin: 0px;}
+
+a{outline:none;}
+
+#fundo{display: none;}
+
+#area {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#botaoAudio {
+	display:none;
+	position:absolute;
+	width:36px;
+	height:36px;
+	top:12px;
+	left:12px;
+	cursor: pointer;
+	z-index:90;		
+}
+
+#tela {	
+    display: block;
+    position: absolute;
+    width:1000px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+#marca{
+	display:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+#elemento{
+	display:block;
+	position:absolute;
+	top:0;
+	left:-1000px;
+}
+
+#titulo{
+	display:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+#personagem{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:400px;
+}
+
+#iniciar{
+	display: none;
+	position: absolute;
+	top: 450px;
+	left: 46px;
+	z-index: 90;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

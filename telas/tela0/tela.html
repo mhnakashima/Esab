@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>ESAB - SEGURANÇA EM AMBIENTES ADMINISTRATIVOS</title>
+         
+    <link rel="stylesheet" type="text/css" href="tela.css" />
+    
+    <!--CHAMADA DE SCRIPTS-->
+    <script language="JavaScript" src="../../js/jquery-1.9.1.js"></script>
+    <script language="JavaScript" src="../../js/jquery-ui-1.10.0.custom.js"></script> 	
+	<!--<script language="JavaScript" src="../../js/padrao.js"></script>-->
+	<script language="JavaScript" src="../../js/audio.js"></script>
+    <script language="JavaScript" src="tela.js"></script>
+    	          
+    
+</head>
+
+<body onload="iniciaCapa_fc()">
+    
+<div id="area">
+    <div id="toca_audio"></div>
+    <div id="botaoAudio" onclick="verificaAudioCapa_fc()"><img src="img/somLigado.png"></div>    
+    <div id="fundo"><img src="img/fundo.png" id="objfundo"></div>                    
+    
+    <div id="tela">
+        <div id="elemento"><img src="img/elemento.png"></div>
+		<div id="titulo"><img src="img/titulo.png"></div>
+        <div id="iniciar"><a href="javascript:parent.navegacaoTelas_fc('AVANCAR')"><img src="img/botaoIniciar.png"></a></div>       
+    </div>
+</div>        
+</body>
+</html>

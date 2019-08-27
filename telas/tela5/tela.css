@@ -1,0 +1,33 @@
+
+body{padding: 0px; margin: 0px;}
+
+a{outline:none;}
+
+#fundo{display: none; position:absolute;}
+
+#area {
+display: block;
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+
+#aparece0{
+top:0px;
+left:0px;	
+}
+
+#seta_v{
+top:265px;
+left:585px;
+z-index:100;
+cursor:pointer;	
+}
+
+#seta_a{
+cursor: pointer;
+left: 640px;
+top: 265px;
+z-index: 100;
+}

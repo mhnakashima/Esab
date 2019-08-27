@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>ESAB</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../css/padrao.css" />     
+    <link rel="stylesheet" type="text/css" href="tela.css" />
+    
+    <!--CHAMADA DE SCRIPTS-->
+    <script language="JavaScript" src="../../js/jquery-1.9.1.js"></script>
+    <script language="JavaScript" src="../../js/jquery-ui-1.10.0.custom.js"></script> 		
+    <script language="JavaScript" src="../../js/monta_personagem.js"></script>
+    <script language="JavaScript" src="tela.js"></script>
+    	          
+    
+</head>
+
+<body onload="iniciaScript_fc()">
+    
+<div id="area">
+    <div id="toca_audio"></div>
+    	
+    <!--LAYOUT PADRÃO ---------------------------------------------------------------------->
+    <!--CABECALHO --------------------------------------------------------------------------> 
+    <div id="cabecalho_div">
+        <div id="barra_cabecalho"></div>
+        <div id="marca"></div>
+        <div id="titulo"></div>
+    </div> 
+    
+    <!--PERSONAGEM---------------------------------------------------------------->
+    <div id="personagem_busto" onmouseover="abre_balao()" onmouseout="fecha_balao()"><img src="../../layout_base/_personagens/personagem.jpg" id="troca_personagem" /></div>
+    <div id="personagem_busto2" onmouseover="abre_balao()" onmouseout="fecha_balao()"><img src="../../layout_base/_personagens/personagem.gif" /></div>
+    <div id="arquivos_boca_busto" onmouseover="abre_balao()" onmouseout="fecha_balao()">
+        <div id="RC_icone_audio" class="RC_icone_audio1">
+            <div id="tx_aguarde">Aguarde</div>
+            <img src="../../layout_base/_itensTelas/load.gif" onclick="">
+            <div id="tx_carregando">Carregando áudio.</div>
+        </div>
+        <div id="guia" onmouseover="abre_balao()" onmouseout="fecha_balao()">
+            <video id="canvas" class="canvas1" autoplay played="some_load()" ended="stop_audio()" preload="metadata"></video>
+        </div>
+    </div> 
+    
+    <!--FIM PERSONAGEM-------------------------------------------------------------------->
+        
+    <div id="fundo">
+    	<img src="../../layout_base/_itensTelas/fundo.jpg" id="objfundo">
+        <div id="balao"></div>  
+    </div>                   
+    
+    <div id="tela">
+    	<img src="img/caixa.png" class="invisivel" id="aparece0" />
+        <img src="img/texto.png" class="invisivel" id="aparece1" />
+    </div>   
+    
+    <div id="elementos_tela">
+           
+        
+    </div>
+        
+    <div id="fundo_pop"></div> 
+    <div id="conteudo_pop"></div> 
+        
+    
+</div>        
+</body>
+</html>
+
+
+
+
+
+
+
