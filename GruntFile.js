@@ -16,6 +16,7 @@ module.exports = function (grunt) {
             dev: {
                 bsFiles: {
                     src : [
+                        './*.css',
                         './css/*.css',
                         './*.html',
                         './**.js'

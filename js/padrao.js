@@ -23,6 +23,7 @@ function getLocation()
 var pagina_atual = 0;
 var pagina_inicial = 1;
 var cliqueMenu_bl = false;
+var glossarioWords = [];
 
 //VARIAVEL QUE DEFINE A QUANTIDADE DE TELAS NO CURSO
 var pagina_final = 7; //<----- INSERIR AQUI A QUANTIDADE DE TELAS NO CURSO CONTANDO COM A CAPA. 
@@ -33,6 +34,8 @@ var array_popup = new Array(30);
 for(p=0;p<=pagina_final;p++){
 	array_popup[p] = false; 	
 }
+
+var xhttp = new XMLHttpRequest();
 
 //--------------------------------------------------------------------------------
 //FUNCÃO QUE CONTROLA A CONSTRUÇÃO DO LAYOUT PADRÃO
@@ -207,6 +210,18 @@ $(document).ready(function(){
 					.css('display', 'none');
 			}
 		})
+	
+	$("#botao-items")
+		.click(function(){
+			var open = $('.alpha:visible').length;
+			if(open == 0){
+				$(".alpha, .glossary")
+					.css('display', 'block');
+			}else{
+				$(".alpha, .glossary")
+					.css('display', 'none');
+			}
+		})
 
 	$("#botaoMenu")
 		.click(function(){
@@ -226,19 +241,8 @@ $(document).ready(function(){
 				.css("display", "none");
 		})
 	
-	$(".botao-items")
-	.click(function(){
-			
-		var open = $('.menu:visible').length;
-		if(open == 0){
-			$(".alpha, .menu")
-				.css('display', 'block');
-
-				window.carregaMenu();
-		}
-	})
-
 	window.glossario();
+	window.carregaGlossario();
 });
 
 function glossario(){
@@ -263,7 +267,52 @@ function glossario(){
 }
 
 function carregaLetra(el, value){
-	console.log(el, value);
+	
+	let glossarioContainer = document.getElementById("glossary-meaning");
+	let opt = "";
+	let search = String.fromCharCode(65 + value);
+	let items = [];
+	
+	if(glossarioWords.length > 0){
+
+		items = glossarioWords.filter(word => {
+			return word.letter == search;
+		})
+		
+		if(items[0]){
+			if(items[0].words){
+
+				items[0].words.forEach(item => {
+					opt += `
+						<li class="glossary-list-item">
+							<span class="glossary-word-name">${ item.word }</span>
+							<span class="glossary-word-meaning">${ item.meaning }</span>
+						</li>
+					`
+				})
+			}
+		}else{
+			opt += `<li><span class='no-words'>Sem palavras com a letra ${ search }</span></li>`;
+		}
+
+	}else{
+		opt += `<li><span class='no-words'>Sem palavras com a letra ${ search }</span></li>`;
+	}
+
+	glossarioContainer.innerHTML = "";
+	glossarioContainer.innerHTML = opt;
+}
+
+function carregaGlossario(){
+	
+	xhttp.onreadystatechange = function() {
+		
+		if (this.readyState == 4 && this.status == 200) {
+			glossarioWords = JSON.parse(xhttp.responseText);
+		}
+	};
+	xhttp.open("GET", "./data/glossario.json", true);
+	xhttp.send();
 }
 
 function carregaMenu(){

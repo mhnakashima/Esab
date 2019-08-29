@@ -348,7 +348,7 @@ opacity:0.5;
 }
 
 .glossary{
-    display: block;
+    display: none;
     position: absolute;
     width: 716px;
     height: 404px;
@@ -393,7 +393,9 @@ opacity:0.5;
 }
 
 .glossary{
+
     &-letters{
+        margin: 40px 25px 0;
         padding: 0px;
     }
 
@@ -401,14 +403,62 @@ opacity:0.5;
 
         display: inline-block;
         
+        margin-right: 5px;
+        padding: 0px;
+
         background-color: #58595B;
+        border-radius: 3px;
         color: #fff;
         font-size: 12px;
+
+        a{
+            padding: 5px 6px;
+            color: #fff;
+
+            span{
+                color: #fff;
+                font-family: 'Simplon BP Regular', sans-serif;
+            }
+        }
 
         &.current{
             background-color: #009E0B;
         }
     }
+
+    &-meaning{
+
+        max-height: 270px;
+        overflow-y: scroll;
+
+        padding: 0px;
+        margin: 0 25px;
+
+        li{
+            list-style: none;
+        }
+    }
+
+    &-list{
+        &-item{
+            margin: 10px 0;
+        }
+    }
+
+    &-word{
+        &-name{
+            font-family: 'Simplon BP Bold', sans-serif;
+            font-weight: bold;
+        }
+
+        &-meaning{
+            font-family: 'Simplon BP Regular', sans-serif;
+        }
+    }
+}
+
+.no-words{
+    font-family: 'Simplon BP Regular', sans-serif;
 }
 
 /*
@@ -490,6 +540,8 @@ opacity:0.5;
     left: 70px;
     position: absolute;
     top: -2px;
+
+    padding-right: 5px;
 
     border-right: 1px solid rgba(175,175,175,0.6);
 }

@@ -1,69 +1,85 @@
 @charset "UTF-8";
-@import url(animate.css);
+@import 'animate.css';
 @font-face {
-  font-family: 'Simplon BP Bold';
+  font-family: "Simplon BP Bold";
   src: url("simplonbp-bold.woff2") format("woff2"), url("simplonbp-bold.woff") format("woff");
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Simplon BP Regular';
+  font-family: "Simplon BP Regular";
   src: url("simplonbp-regular.woff2") format("woff2"), url("simplonbp-regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Simplon BP Light';
+  font-family: "Simplon BP Light";
   src: url("simplonbp-light.woff2") format("woff2"), url("simplonbp-light.woff") format("woff");
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Simplon Oi Headline';
+  font-family: "Simplon Oi Headline";
   src: url("simplonoi-headline.woff2") format("woff2"), url("simplonoi-headline.woff") format("woff");
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Simplon BP';
+  font-family: "Simplon BP";
   src: url("simplonbp-medium.woff2") format("woff2"), url("simplonbp-medium.woff") format("woff");
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+}
 /*------------------------------------------------------------*/
 /*CSS ESTRUTURA --------------------------------------------- */
 a {
-  outline: none; }
+  outline: none;
+}
 
 a:link {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a.over {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 img {
-  border: 0; }
+  border: 0;
+}
 
 .clear {
-  clear: both; }
+  clear: both;
+}
 
 body {
   margin: 0px;
   padding: 0px;
   background-color: #FFFFFF;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI";
+}
 
 /* Retira botão download*/
 video::-internal-media-controls-download-button {
-  display: none; }
+  display: none;
+}
 
 video::-webkit-media-controls-enclosure {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 video::-webkit-media-controls-panel {
   width: calc(100% + 30px);
-  /* Adjust as needed */ }
+  /* Adjust as needed */
+}
 
 #alinhamento-central {
   position: absolute;
@@ -77,7 +93,8 @@ video::-webkit-media-controls-panel {
   -webkit-box-shadow: 0 0 10px 10px #C0C0C0;
   box-shadow: 0 0 10px 10px #C0C0C0;
   margin: -315px -485px;
-  border: 0px; }
+  border: 0px;
+}
 
 /*------------------------------------------------------------*/
 /*CSS PADRAO LAYOUT ----------------------------------------- */
@@ -91,7 +108,8 @@ video::-webkit-media-controls-panel {
   left: 0px;
   z-index: 99;
   background: #FFF;
-  border-bottom: 2px solid #009E0A; }
+  border-bottom: 2px solid #009E0A;
+}
 
 .nameOfScreen {
   position: absolute;
@@ -101,14 +119,16 @@ video::-webkit-media-controls-panel {
   width: 300px;
   margin-left: -150px;
   color: #009E0B;
-  font-family: 'Simplon Oi Headline';
+  font-family: "Simplon Oi Headline";
   font-size: 30px;
-  text-align: center; }
+  text-align: center;
+}
 
 .logo {
   position: absolute;
   left: 10px;
-  top: 10px; }
+  top: 10px;
+}
 
 #barra_cabecalho {
   display: none;
@@ -119,7 +139,8 @@ video::-webkit-media-controls-panel {
   left: 0px;
   background-image: url(../layout_base/_itensTelas/cabecalho.png);
   z-index: 99;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
 #elemento {
   display: block;
@@ -129,22 +150,26 @@ video::-webkit-media-controls-panel {
   top: 10px;
   left: -50px;
   background-image: url(../layout_base/_itensTelas/elementotitulo.jpg);
-  z-index: 100; }
+  z-index: 100;
+}
 
 #titulo {
   display: none;
   position: absolute;
   z-index: 99;
-  top: 0px; }
+  top: 0px;
+}
 
 #subtitulo {
   display: none;
   position: absolute;
   z-index: 99;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 .links_menu {
-  opacity: 0.5; }
+  opacity: 0.5;
+}
 
 /*------------------------------------------------------------*/
 /*PERSONAGEM ------------------------------------------------ */
@@ -157,7 +182,8 @@ video::-webkit-media-controls-panel {
   right: 23px;
   top: 126px;
   width: 253px;
-  z-index: 100; }
+  z-index: 100;
+}
 
 #personagem_busto2 {
   cursor: pointer;
@@ -167,14 +193,16 @@ video::-webkit-media-controls-panel {
   right: 23px;
   top: 126px;
   width: 253px;
-  z-index: 101; }
+  z-index: 101;
+}
 
 #balao {
   display: none;
   position: absolute;
   bottom: 383px;
   right: 175px;
-  z-index: 102; }
+  z-index: 102;
+}
 
 /*TELA*/
 #personagem_tela {
@@ -183,13 +211,15 @@ video::-webkit-media-controls-panel {
   left: 840px;
   position: absolute;
   top: 50px;
-  z-index: 100; }
+  z-index: 100;
+}
 
 #balao_tela {
   display: none;
   position: absolute;
   left: 220px;
-  top: 200px; }
+  top: 200px;
+}
 
 /*------------------------------------------------------------*/
 /*RODAPE ---------------------------------------------------- */
@@ -198,7 +228,8 @@ video::-webkit-media-controls-panel {
   position: absolute;
   width: 970px;
   left: 0px;
-  top: 718px; }
+  top: 718px;
+}
 
 #barra_rodape {
   display: block;
@@ -207,7 +238,8 @@ video::-webkit-media-controls-panel {
   height: 37px;
   left: 0px;
   bottom: 0px;
-  background-color: #DEDEDE; }
+  background-color: #DEDEDE;
+}
 
 #marca {
   display: none;
@@ -217,7 +249,8 @@ video::-webkit-media-controls-panel {
   width: 137px;
   height: 92px;
   z-index: 100;
-  background-image: url(../layout_base/_itensTelas/marca.png); }
+  background-image: url(../layout_base/_itensTelas/marca.png);
+}
 
 #contagem_telas {
   display: block;
@@ -227,14 +260,17 @@ video::-webkit-media-controls-panel {
   bottom: 18px;
   top: 10px;
   width: 60px;
-  height: 40px; }
-  #contagem_telas .items {
-    margin-top: -3px; }
-  #contagem_telas .topo, #contagem_telas #num_paginas, #contagem_telas #total_paginas {
-    color: #58595B;
-    font-family: 'Simplon Oi Headline';
-    font-size: 18px;
-    text-align: right; }
+  height: 40px;
+}
+#contagem_telas .items {
+  margin-top: -3px;
+}
+#contagem_telas .topo, #contagem_telas #num_paginas, #contagem_telas #total_paginas {
+  color: #58595B;
+  font-family: "Simplon Oi Headline";
+  font-size: 18px;
+  text-align: right;
+}
 
 /*------------------------------------------------------------*/
 /*MENU ------------------------------------------------------ */
@@ -248,41 +284,49 @@ video::-webkit-media-controls-panel {
   top: 153px;
   margin-left: -218px;
   background-image: url(../layout_base/_itensTelas/menuPopup.png);
-  background-repeat: none; }
-  .menu .fechar {
-    position: absolute;
-    left: 412px;
-    top: 5px;
-    z-index: 200;
-    cursor: pointer; }
-  .menu #menu-lista {
-    display: block;
-    position: absolute;
-    top: 40px;
-    width: 100%;
-    padding: 0; }
-  .menu-item {
-    margin: 10px 0;
-    padding: 0px 10px;
-    position: relative;
-    list-style-type: none; }
-  .menu-items {
-    padding: 0px;
-    max-height: 200px;
-    overflow-y: auto; }
-  .menu-status {
-    position: absolute;
-    right: 30px;
-    top: -3px; }
-  .menu-anchor {
-    display: block;
-    padding: 0 10px; }
-  .menu-name {
-    color: #58595B;
-    font-family: 'Simplon BP'; }
+  background-repeat: none;
+}
+.menu .fechar {
+  position: absolute;
+  left: 412px;
+  top: 5px;
+  z-index: 200;
+  cursor: pointer;
+}
+.menu #menu-lista {
+  display: block;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  padding: 0;
+}
+.menu-item {
+  margin: 10px 0;
+  padding: 0px 10px;
+  position: relative;
+  list-style-type: none;
+}
+.menu-items {
+  padding: 0px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.menu-status {
+  position: absolute;
+  right: 30px;
+  top: -3px;
+}
+.menu-anchor {
+  display: block;
+  padding: 0 10px;
+}
+.menu-name {
+  color: #58595B;
+  font-family: "Simplon BP";
+}
 
 .glossary {
-  display: block;
+  display: none;
   position: absolute;
   width: 716px;
   height: 404px;
@@ -291,13 +335,15 @@ video::-webkit-media-controls-panel {
   top: 132px;
   margin-left: -358px;
   background-image: url(../layout_base/_itensTelas/glossario.png);
-  background-repeat: none; }
-  .glossary .fechar {
-    position: absolute;
-    left: 688px;
-    z-index: 200;
-    top: 2px;
-    cursor: pointer; }
+  background-repeat: none;
+}
+.glossary .fechar {
+  position: absolute;
+  left: 688px;
+  z-index: 200;
+  top: 2px;
+  cursor: pointer;
+}
 
 #botaoMenu {
   background-image: url("../layout_base/_itensTelas/botaoMenu.png");
@@ -307,7 +353,8 @@ video::-webkit-media-controls-panel {
   left: -735px;
   position: absolute;
   top: -10px;
-  width: 42px; }
+  width: 42px;
+}
 
 #menu {
   background-color: #000;
@@ -317,17 +364,56 @@ video::-webkit-media-controls-panel {
   left: 420px;
   position: absolute;
   width: 343px;
-  opacity: 0.8; }
+  opacity: 0.8;
+}
 
 .glossary-letters {
-  padding: 0px; }
+  margin: 40px 25px 0;
+  padding: 0px;
+}
 .glossary-item {
   display: inline-block;
+  margin-right: 5px;
+  padding: 0px;
   background-color: #58595B;
+  border-radius: 3px;
   color: #fff;
-  font-size: 12px; }
-  .glossary-item.current {
-    background-color: #009E0B; }
+  font-size: 12px;
+}
+.glossary-item a {
+  padding: 5px 6px;
+  color: #fff;
+}
+.glossary-item a span {
+  color: #fff;
+  font-family: "Simplon BP Regular", sans-serif;
+}
+.glossary-item.current {
+  background-color: #009E0B;
+}
+.glossary-meaning {
+  max-height: 270px;
+  overflow-y: scroll;
+  padding: 0px;
+  margin: 0 25px;
+}
+.glossary-meaning li {
+  list-style: none;
+}
+.glossary-list-item {
+  margin: 10px 0;
+}
+.glossary-word-name {
+  font-family: "Simplon BP Bold", sans-serif;
+  font-weight: bold;
+}
+.glossary-word-meaning {
+  font-family: "Simplon BP Regular", sans-serif;
+}
+
+.no-words {
+  font-family: "Simplon BP Regular", sans-serif;
+}
 
 /*
 #menu-lista
@@ -372,28 +458,32 @@ video::-webkit-media-controls-panel {
   width: 222px;
   height: 50px;
   top: 572px;
-  left: 735px; }
+  left: 735px;
+}
 
 #botao-ajuda {
   cursor: pointer;
   display: inline-block;
   left: -304px;
   position: absolute;
-  top: -10px; }
+  top: -10px;
+}
 
 #botao-rever {
   cursor: pointer;
   display: inline-block;
   left: -204px;
   position: absolute;
-  top: -10px; }
+  top: -10px;
+}
 
 #botao-items {
   cursor: pointer;
   display: inline-block;
   left: -254px;
   position: absolute;
-  top: -10px; }
+  top: -10px;
+}
 
 #botao-voltar {
   cursor: pointer;
@@ -401,20 +491,25 @@ video::-webkit-media-controls-panel {
   left: 70px;
   position: absolute;
   top: -2px;
-  border-right: 1px solid rgba(175, 175, 175, 0.6); }
+  padding-right: 5px;
+  border-right: 1px solid rgba(175, 175, 175, 0.6);
+}
 
 #botao-avancar {
   cursor: pointer;
   display: block;
   left: 161px;
   position: absolute;
-  top: -2px; }
+  top: -2px;
+}
 
 #num_paginas {
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
 #total_paginas {
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
 #apertaTecla {
   position: absolute;
@@ -425,29 +520,34 @@ video::-webkit-media-controls-panel {
   background: none;
   width: 15px;
   height: 20px;
-  z-index: 200; }
+  z-index: 200;
+}
 
 .invisivel {
   display: none;
-  position: absolute; }
+  position: absolute;
+}
 
 #RC_icone_audio {
   width: 37px;
-  height: 35px; }
+  height: 35px;
+}
 
 .RC_icone_audio1 {
   cursor: pointer;
   right: 60px;
   position: absolute;
   top: 170px;
-  z-index: 501; }
+  z-index: 501;
+}
 
 .RC_icone_audio2 {
   left: 698px;
   position: absolute;
   top: 58px;
   cursor: pointer;
-  z-index: 501; }
+  z-index: 501;
+}
 
 #tx_aguarde {
   font-size: 8px;
@@ -455,7 +555,8 @@ video::-webkit-media-controls-panel {
   position: absolute;
   top: -13px;
   left: 0px;
-  color: #666; }
+  color: #666;
+}
 
 #tx_carregando {
   font-size: 8px;
@@ -464,47 +565,56 @@ video::-webkit-media-controls-panel {
   bottom: -11px;
   left: -15px;
   width: 100px;
-  color: #666; }
+  color: #666;
+}
 
 #boca_guia_grande {
   position: absolute;
   top: 192px;
   left: 96px;
-  z-index: 1000; }
+  z-index: 1000;
+}
 
 #boca_guia_antes {
-  z-index: 1000; }
+  z-index: 1000;
+}
 
 #boca_guia_antes_gif {
-  z-index: 1001; }
+  z-index: 1001;
+}
 
 .boca_guia_grande {
   position: absolute;
   top: 192px;
   left: 96px;
-  display: none; }
+  display: none;
+}
 
 .boca_guia_grande_antes {
   display: block;
   left: 848px;
   position: absolute;
-  top: 87px; }
+  top: 87px;
+}
 
 .boca_guia_pequeno {
   left: 610px;
   position: absolute;
   top: 123px;
-  display: none; }
+  display: none;
+}
 
 .boca_guia_pequeno_antes {
   left: 610px;
   position: absolute;
   top: 123px;
-  display: block; }
+  display: block;
+}
 
 #canvas {
   width: 28px;
-  height: 14px; }
+  height: 14px;
+}
 
 .canvas1 {
   background: transparent none repeat scroll 0 0;
@@ -512,34 +622,40 @@ video::-webkit-media-controls-panel {
   position: absolute;
   top: 198px;
   z-index: 501;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .canvas2 {
   left: 80px;
   position: absolute;
   top: 103px;
   z-index: 501;
-  background: transparent; }
+  background: transparent;
+}
 
 #v_personagem {
   position: absolute;
   top: 0px;
   left: 0px;
   z-index: 1;
-  background: transparent; }
+  background: transparent;
+}
 
 #v_personagem2 {
   position: absolute;
   top: 0px;
   left: 0px;
   z-index: 0;
-  background: transparent; }
+  background: transparent;
+}
 
 #arquivos_boca_busto {
-  display: none; }
+  display: none;
+}
 
 #arquivos_boca_tela {
-  display: none; }
+  display: none;
+}
 
 #elementos_tela {
   height: 455px;
@@ -547,7 +663,8 @@ video::-webkit-media-controls-panel {
   position: absolute;
   top: 114px;
   width: 970px;
-  z-index: 99; }
+  z-index: 99;
+}
 
 #fundo_pop {
   background-color: #000;
@@ -558,7 +675,8 @@ video::-webkit-media-controls-panel {
   top: 0px;
   left: 0px;
   z-index: 1001;
-  display: none; }
+  display: none;
+}
 
 #conteudo_pop {
   position: absolute;
@@ -567,24 +685,28 @@ video::-webkit-media-controls-panel {
   top: 0px;
   left: 0px;
   z-index: 1002;
-  display: none; }
+  display: none;
+}
 
 #conteudo_pop #pop {
   position: absolute;
   top: 0px;
-  left: 0px; }
+  left: 0px;
+}
 
 .item {
   position: absolute;
   z-index: 1003;
   height: 14px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .pop_item {
   position: absolute;
   z-index: 1003;
   display: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .ajuda {
   display: none;
@@ -594,23 +716,27 @@ video::-webkit-media-controls-panel {
   z-index: 120;
   height: 600px;
   width: 1000px;
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 .fechar {
   position: absolute;
   left: 696px;
   top: 163px;
   z-index: 200;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .ajudaImg {
   position: absolute;
   left: 50%;
   top: 159px;
-  margin-left: -222px; }
+  margin-left: -222px;
+}
 
 .alpha {
-  display: none; }
+  display: none;
+}
 
 /*--------------------------------------------------------------------------------------*/
 /*TIPOGRAFIAS -----------*/
@@ -730,43 +856,43 @@ z-index:100;
 #alpha{
 	position:absolute;
 	display:none;
-	
+
 	background-color:#FFF;
-	
+
 	opacity:0.8;
 	filter(opacity): 80;
-	
+
 	top:0px;
 	left:0px;
 	width:780px;
 	height:570px;
-	
+
 	z-index:1500;	
 }
 
 #popup{
 	position:absolute;
 	display:none;
-	
+
 	top:0px;
 	left:0px;
-	
+
 	width:780px;
 	height:570px;
-	
+
 	z-index:101;	
 }
 
 #botaoFecharPopup{
 	position:absolute;
 	display:none;
-	
+
 	top:60px;
 	left:800px;
-	
+
 	width:31px;
 	height:31px;
-		
+
 	z-index:102;	
 }
 
