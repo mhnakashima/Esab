@@ -319,6 +319,16 @@ video::-webkit-media-controls-panel {
   width: 343px;
   opacity: 0.8; }
 
+.glossary-letters {
+  padding: 0px; }
+.glossary-item {
+  display: inline-block;
+  background-color: #58595B;
+  color: #fff;
+  font-size: 12px; }
+  .glossary-item.current {
+    background-color: #009E0B; }
+
 /*
 #menu-lista
 {

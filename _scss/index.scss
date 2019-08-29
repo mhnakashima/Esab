@@ -392,6 +392,25 @@ opacity:0.5;
 	opacity:0.8;
 }
 
+.glossary{
+    &-letters{
+        padding: 0px;
+    }
+
+    &-item{
+
+        display: inline-block;
+        
+        background-color: #58595B;
+        color: #fff;
+        font-size: 12px;
+
+        &.current{
+            background-color: #009E0B;
+        }
+    }
+}
+
 /*
 #menu-lista
 {

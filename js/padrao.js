@@ -237,7 +237,34 @@ $(document).ready(function(){
 				window.carregaMenu();
 		}
 	})
+
+	window.glossario();
 });
+
+function glossario(){
+	let list = document.getElementById('glossary-letters');
+	let opt = '';
+
+	const TOTAL_LETTERS = 26;
+
+	for(var i = 0; i < TOTAL_LETTERS; i++){
+		opt += 
+		`<li class="glossary-item menu-item" id="link_menu">
+			<a class="menu-anchor" href="#" onclick="carregaLetra(this, ${i})">
+				<span class="menu-name">
+					${String.fromCharCode(65 + i)}
+				</span>
+			</a>
+		</li>`
+	}
+
+	list.innerHTML = '';
+	list.innerHTML = opt;
+}
+
+function carregaLetra(el, value){
+	console.log(el, value);
+}
 
 function carregaMenu(){
 
