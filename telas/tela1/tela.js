@@ -4,9 +4,14 @@
 var tempo_entrada = 500;
 var num_obj = 9
 
+var items = [];
+var clicks = document.getElementsByClassName('elementos-anchor');
+
+console.log(clicks);
 //FUNÇÕES -------------------------------------------------------------------------
 // --------------------------------------------------------------------------------
 //FUNCAO INICIA EXIBIÇÃO DE OBJETOS DA CAPA  --------------------------------------
+
 
 function iniciaScript_fc()
 {		
@@ -17,14 +22,46 @@ function iniciaScript_fc()
 	$('#fundo').fadeIn(tempo_entrada, function()
 	{
 		//CHAMA CONSTRUÇÃO DO LAYOUT E SETA QUAL PERSONAGEM SERA USADO NA TELA: 'BUSTO' OU 'TELA'
-		
-		
-		montaPersonagem();
-		
-	});		
+			
+	});	
 	
+	for(var i = 0; i < clicks.length; i++){
+		items.push({
+			index: i,
+			seen: false
+		})
+	};
 }
 
+function mostrarConteudo(item, index){
+	
+	let desbloqueaTela = true;
+	
+	if(!items[index].seen){
+		items[index].seen = true;
+	}	
+	
+	for(var i = 0; i < items.length; i++){
+		let item = document.getElementsByClassName('conteudo' + i)[0]
+		
+		console.log("item", item);
+
+		item.style.display = "none";
+		
+		if(items[i].seen == false){
+			desbloqueaTela = false;
+		}
+
+		if(i == index){
+			item.style.display = "inline-block";
+		}
+	}
+
+	if(desbloqueaTela){
+		parent.habilitaAvancar();
+	}
+}
+/*
 //FUNCÃO QUE CONTROLA A CONSTRUÇÃO DO LAYOUT PADRÃO
 function montaPersonagem()
 {
@@ -63,11 +100,11 @@ function abre_objetos(){
 	});
 }
 
-
+/*
 function inicia_video(){
 	//stop_video();
 	parent.habilitaAvancar();
-	document.getElementById("aparece0").style.display = "none";	
+	/document.getElementById("aparece0").style.display = "none";	
 	document.getElementById("item1").style.display = "none";	
 	$('#fundo_pop').fadeIn(400, function()
 	{
@@ -187,7 +224,7 @@ function colocar_check(popup){
 	document.getElementById(aux).style.display = "block";	
 }
 
-
+*/
 
 
 

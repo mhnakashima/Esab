@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import 'animate.css';
+@font-face {
+  font-family: "Simplon BP Bold";
+  src: url("simplonbp-bold.woff2") format("woff2"), url("simplonbp-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Simplon BP Regular";
+  src: url("simplonbp-regular.woff2") format("woff2"), url("simplonbp-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Simplon BP Light";
+  src: url("simplonbp-light.woff2") format("woff2"), url("simplonbp-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Simplon Oi Headline";
+  src: url("simplonoi-headline.woff2") format("woff2"), url("simplonoi-headline.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Simplon BP";
+  src: url("simplonbp-medium.woff2") format("woff2"), url("simplonbp-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
