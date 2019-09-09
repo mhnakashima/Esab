@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>ESAB</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../css/padrao.css" />     
+    <link rel="stylesheet" type="text/css" href="tela.css" />
+    
+    <!--CHAMADA DE SCRIPTS-->
+    <script language="JavaScript" src="../../js/jquery-1.9.1.js"></script>
+    <script language="JavaScript" src="../../js/jquery-ui-1.10.0.custom.js"></script> 		
+    <script language="JavaScript" src="tela.js"></script>
+    	          
+    
+</head>
+
+<body onload="iniciaScript_fc()">
+    
+    <div id="area">
+        
+        <!--LAYOUT PADRÃO ---------------------------------------------------------------------->
+        <!--CABECALHO --------------------------------------------------------------------------> 
+        
+        <div id="elementos_tela">
+            
+            <div class="items">
+                <p>
+                    Veja um pouco como funciona o atendimento do WhatsApp da Oi. Observe que dá para ver a foto de perfil do técnico e conferir o deslocamento pelo mapa.<br><br>Clique na conversa do técnico para ver o mapa de deslocamento. 
+                </p> 
+            </div>
+
+            <ul class="elementos-botoes">
+                <li class="listItem" class="elementos-item">
+                    <a id="tela" class="elementos-anchor" href="#" onclick="mostrarConteudo(this, 0)">
+                        <img src="./img/item1clique.png" alt="gráfico" />
+                    </a>
+                </li>
+            </ul>    
+            
+        </div>    
+        
+        <div class="conteudo-tela">
+            <div class="conteudo conteudo0">
+                    <img src="./img/tela1grid.png" alt="gráfico" />
+            </div>
+        </div>
+
+    </div>        
+</body>
+</html>

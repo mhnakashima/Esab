@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>ESAB</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../css/padrao.css" />     
+    <link rel="stylesheet" type="text/css" href="tela.css" />
+    
+    <!--CHAMADA DE SCRIPTS-->
+    <script language="JavaScript" src="../../js/jquery-1.9.1.js"></script>
+    <script language="JavaScript" src="../../js/jquery-ui-1.10.0.custom.js"></script> 		
+    <script language="JavaScript" src="tela.js"></script>
+    	          
+    
+</head>
+
+<body onload="iniciaScript_fc()">
+    
+    <div id="area">
+        
+        <!--LAYOUT PADRÃO ---------------------------------------------------------------------->
+        <!--CABECALHO --------------------------------------------------------------------------> 
+        
+        <h2 class="subTitle">Dicas de argumentação</h2>
+                
+        <div id="elementos_tela">
+
+            <img class="imagem item" src="../../telas/tela1/img/fundo_atual.png" alt="Item">
+            
+            <ul class="elementos-botoes">
+                <li class="elementos-item"><a class="elementos-anchor" href="#" onclick="mostrarConteudo(this, 0)">1</a></li>
+                <li class="elementos-item"><a class="elementos-anchor" href="#" onclick="mostrarConteudo(this, 1)">2</a></li>
+                <li class="elementos-item"><a class="elementos-anchor" href="#" onclick="mostrarConteudo(this, 2)">3</a></li>
+                <li class="elementos-item"><a class="elementos-anchor" href="#" onclick="mostrarConteudo(this, 3)">4</a></li>
+                <li class="elementos-item"><a class="elementos-anchor" href="#" onclick="mostrarConteudo(this, 4)">5</a></li>
+            </ul>    
+            
+        </div>    
+        
+        <div class="conteudo-tela">
+            <div class="conteudo conteudo0">
+                <h3>CONVENIÊNCIA</h3>
+                <p>Explique ao cliente que ele pode acessar a conta em qualquer hora e lugar, sem necessidade de esperar o recebimento da fatura.
+                </p>
+            </div>
+            <div class="conteudo conteudo1">
+                <h3>FACILIDADE</h3>
+                <p>Argumente dizendo que, se ele quiser a conta somente para pagamento, pode retirar o código de barras sem necessidade de login, o que é muito mais rápido.
+                </p>
+            </div>
+            <div class="conteudo conteudo2">
+                <h3>SERVIÇOS</h3>
+                <p>
+                    Além de emitir segunda via de conta, o cliente pode realizar diversos outros serviços na Minha Oi, como: alterar a data de vencimento, realizar ativação e desativação de caixa postal, entre outros.
+                </p>
+            </div>
+            <div class="conteudo conteudo3">
+                <h3>COMODIDADE</h3>
+                <p>
+                    Informe que o cliente não precisa ligar para o Atendimento. Assim, ele economiza mais tempo, pois como Minha Oi, ele tem a possibilidade de retirar a segunda via muito mais rápido. E, ao aderir ao Conta Online, evita o desgaste com Greve dos Correios e atrasos de entrega de contas.
+                </p>
+            </div>
+            <div class="conteudo conteudo4">
+                <h3>SEGURANÇA</h3>
+                <p>
+                    Informe que o acesso à conta detalhada é realizado com segurança, através de login e senha.
+                </p>
+            </div>
+        </div>
+
+        <span class="message">
+            Clique nos números para saber mais.
+        </span>
+        
+    </div>        
+</body>
+</html>

@@ -1,0 +1,126 @@
+
+@font-face {
+    font-family: 'Simplon BP Bold';
+    src: url('../../css/simplonbp-bold.woff2') format('woff2'),
+        url('simplonbp-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simplon BP Regular';
+    src: url('../../css/simplonbp-regular.woff2') format('woff2'),
+        url('../../css/simplonbp-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simplon BP Light';
+    src: url('../../css/simplonbp-light.woff2') format('woff2'),
+        url('../../css/simplonbp-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simplon Oi Headline';
+    src: url('../../css/simplonoi-headline.woff2') format('woff2'),
+        url('../../css/simplonoi-headline.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simplon BP';
+    src: url('../../css/simplonbp-medium.woff2') format('woff2'),
+        url('../../css/simplonbp-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{padding: 0px; margin: 0px;}
+
+a{outline:none;}
+
+#fundo{display: none; position:absolute;}
+
+#elementos_tela{
+    
+    height: 499px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 64px;
+    width: 1000px;
+    z-index: 99;
+
+    
+}
+
+
+#area {
+display: block;
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+
+#aparece0{
+top:0px;
+left:0px;	
+}
+
+#aparece1{
+top:0px;
+left:0px;	
+}
+
+#seta_v{
+top:215px;
+left:20px;
+z-index:100;
+cursor:pointer;	
+}
+
+#seta_a{
+cursor: pointer;
+left: 615px;
+top: 215px;
+z-index: 100;
+}
+
+/* === */
+.title{
+    
+    position: absolute;
+    left: 470px;
+    top: 55px;
+    width: 240px;
+    color: #009E0B;
+    font-family: 'Simplon BP', sans-serif;
+    text-transform: uppercase;
+ 
+}
+
+.info .texto{
+    font-family: 'Simplon BP Regular';
+    width: 310px;
+    top: 110px;
+    left: 470px;
+    position: absolute;
+    font-size: 16px;
+}
+
+.imagem{
+    position: absolute;
+    left: 0px;
+    top: -75px;
+
+    height: 600px;
+    width: 1024px;
+
+    cursor: pointer;
+}
+

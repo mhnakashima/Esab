@@ -97,12 +97,12 @@ video::-webkit-media-controls-panel {
   position: absolute;
   display: inline-block;
   left: 50%;
-  top: 10px;
+  top: 17px;
   width: 300px;
   margin-left: -150px;
   color: #009E0B;
   font-family: 'Simplon Oi Headline';
-  font-size: 30px;
+  font-size: 22px;
   text-align: center; }
 
 .logo {
@@ -225,7 +225,7 @@ video::-webkit-media-controls-panel {
   position: absolute;
   left: 920px;
   bottom: 18px;
-  top: 10px;
+  top: 20px;
   width: 60px;
   height: 40px; }
   #contagem_telas .items {
