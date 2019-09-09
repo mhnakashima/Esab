@@ -19,15 +19,27 @@ left:0px;
 }
 
 #seta_v{
-top:130px;
-left:590px;
+top:215px;
+left:20px;
 z-index:100;
 cursor:pointer;	
 }
 
 #seta_a{
 cursor: pointer;
-left: 645px;
-top: 130px;
+left: 615px;
+top: 215px;
 z-index: 100;
+}
+
+
+#video_tela{
+background-color: #000;
+border: 4px solid #ffffff;
+cursor: pointer;
+height: 438px;
+left: 88px;
+top: -37px;
+width: 777px;
+z-index: 50;
 }

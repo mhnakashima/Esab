@@ -800,7 +800,17 @@ cursor:pointer;
 }
 
 .alpha{
+    
     display: none;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: 120;
+    height: 600px;
+    width: 1000px;
+
+    background-color: rgba($color: #000, $alpha: 0.5);
+
 }
 
 /*--------------------------------------------------------------------------------------*/

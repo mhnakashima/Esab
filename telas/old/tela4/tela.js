@@ -18,12 +18,33 @@ function iniciaScript_fc()
 	{
 		//CHAMA CONSTRUÇÃO DO LAYOUT E SETA QUAL PERSONAGEM SERA USADO NA TELA: 'BUSTO' OU 'TELA'
 		
-		abre_objetos();
+		
 		montaPersonagem();
 		
 	});		
 	
 }
+
+//FUNCÃO QUE CONTROLA A CONSTRUÇÃO DO LAYOUT PADRÃO
+function montaPersonagem()
+{
+	// CABECALHO -----------------------------------------------------------------
+	var titulo = '<img src="img/titulo.png" border="0">';
+	document.getElementById("titulo").innerHTML = titulo;
+	parent.habilitaAvancar();
+	
+		
+	// EXIBE CONTEUDO ------------------------------------------------------------
+	// CABECALHO
+	$("#barra_cabecalho").fadeIn(500,function()
+	{
+		//PERSONAGEM BUSTO
+		abre_objetos();		
+	});
+	
+	
+}
+
 
 
 function abre_objetos(){	
@@ -33,14 +54,29 @@ function abre_objetos(){
 	// Animation complete.
 	$('#aparece0').fadeIn(400, function()
 	{
-		$('#seta_a').fadeIn(400);
+		//$('#seta_a').fadeIn(400);
 	});
+}
+
+
+function inicia_video(){
+	//stop_video();
+	parent.habilitaAvancar();
+	document.getElementById("aparece0").style.display = "none";	
+	document.getElementById("item1").style.display = "none";	
+	$('#fundo_pop').fadeIn(400, function()
+	{
+		document.getElementById("elementos_tela").style.zIndex = "1100";	
+		document.getElementById("video_tela").style.display = "block";	
+		document.getElementById("video_tela").play();
+	});
+	
 }
 
 
 
 var atual = 1;
-var total = 5;
+var total = 2;
 
 function avancar(){
 	atual++;
@@ -89,7 +125,7 @@ function abre_pop(popup){
 	aux = "resp"+popup;
 	window[aux] = true;
 	
-	if(popup == 1 || popup == 2 || popup == 3){
+	if(popup == 1 || popup == 2){
 		conteudo_popup = '<img src="img/botao_fechar.png" id="bt_fechar" onClick="fecharPop();" /><img src="img/popup'+popup+'.png" id="pop" />';
 	}
 	

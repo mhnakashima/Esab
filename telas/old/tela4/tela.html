@@ -11,7 +11,6 @@
     <!--CHAMADA DE SCRIPTS-->
     <script language="JavaScript" src="../../js/jquery-1.9.1.js"></script>
     <script language="JavaScript" src="../../js/jquery-ui-1.10.0.custom.js"></script> 		
-    <script language="JavaScript" src="../../js/monta_personagem.js"></script>
     <script language="JavaScript" src="tela.js"></script>
     	          
     
@@ -29,37 +28,24 @@
         <div id="marca"></div>
         <div id="titulo"></div>
     </div> 
-    
-    <!--PERSONAGEM---------------------------------------------------------------->
-    <div id="personagem_busto" onmouseover="abre_balao()" onmouseout="fecha_balao()"><img src="../../layout_base/_personagens/personagem.jpg" id="troca_personagem" /></div>
-    <div id="personagem_busto2" onmouseover="abre_balao()" onmouseout="fecha_balao()"><img src="../../layout_base/_personagens/personagem.gif" /></div>
-    <div id="arquivos_boca_busto" onmouseover="abre_balao()" onmouseout="fecha_balao()">
-        <div id="RC_icone_audio" class="RC_icone_audio1">
-            <div id="tx_aguarde">Aguarde</div>
-            <img src="../../layout_base/_itensTelas/load.gif" onclick="">
-            <div id="tx_carregando">Carregando áudio.</div>
-        </div>
-        <div id="guia" onmouseover="abre_balao()" onmouseout="fecha_balao()">
-            <video id="canvas" class="canvas1" autoplay played="some_load()" ended="stop_audio()" preload="metadata"></video>
-        </div>
-    </div> 
-    
-    <!--FIM PERSONAGEM-------------------------------------------------------------------->
-        
+            
     <div id="fundo">
-    	<img src="../../layout_base/_itensTelas/fundo.jpg" id="objfundo">
+    	<img src="img/fundo.png" id="objfundo">
         <div id="balao"></div>  
     </div>                   
     
     <div id="tela">
-    	<img src="img/texto1.png" class="invisivel" id="aparece0" />
+    	<img src="img/imagem.png" class="invisivel" id="aparece0" />
     </div>   
     
     <div id="elementos_tela">
-           
         
-        <img src="../../layout_base/_itensTelas/botao_nav_voltar.png" class="invisivel" id="seta_v" onClick="voltar()" />
-        <img src="../../layout_base/_itensTelas/botao_nav_avancar.png" class="invisivel" id="seta_a" onClick="avancar()" />    
+        <div class="item" id="item1" style="height:125px;left:643px;top:148px;width:144px;" onClick="inicia_video()"></div>
+        
+        <video id="video_tela" class="invisivel" preload="metadata" controls>
+            <source src="video/video.mp4" type="video/mp4"></source>
+        </video>    
+        
     </div>
         
     <div id="fundo_pop"></div> 

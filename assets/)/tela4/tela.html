@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>ESAB</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../css/padrao.css" />     
+    <link rel="stylesheet" type="text/css" href="tela.css" />
+    
+    <!--CHAMADA DE SCRIPTS-->
+    <script language="JavaScript" src="../../js/jquery-1.9.1.js"></script>
+    <script language="JavaScript" src="../../js/jquery-ui-1.10.0.custom.js"></script> 		
+    <script language="JavaScript" src="tela.js"></script>
+    	          
+    
+</head>
+
+<body onload="iniciaScript_fc()">
+    
+<div id="area">
+    <div id="toca_audio"></div>
+    	
+    <!--LAYOUT PADRÃO ---------------------------------------------------------------------->
+    <!--CABECALHO --------------------------------------------------------------------------> 
+    <div id="cabecalho_div">
+        <div id="barra_cabecalho"></div>
+        <div id="marca"></div>
+        <div id="titulo"></div>
+    </div> 
+            
+    <div id="fundo">
+    	<img src="img/fundo.png" id="objfundo">
+        <div id="balao"></div>  
+    </div>                   
+    
+    <div id="tela">
+    	<img src="img/imagem.png" class="invisivel" id="aparece0" />
+    </div>   
+    
+    <div id="elementos_tela">
+        
+        <div class="item" id="item1" style="height:125px;left:643px;top:148px;width:144px;" onClick="inicia_video()"></div>
+        
+        <video id="video_tela" class="invisivel" preload="metadata" controls>
+            <source src="video/video.mp4" type="video/mp4"></source>
+        </video>    
+        
+    </div>
+        
+    <div id="fundo_pop"></div> 
+    <div id="conteudo_pop"></div> 
+        
+    
+</div>        
+</body>
+</html>
+
+
+
+
+
+
+
